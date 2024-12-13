@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Carousel Item Styles */
+.carousel-item img {
+    height: 93vh;
+    width: 100%;
+}
+
+/* About Us Section */
+.About_Us {
+    min-width: 90%;
+    max-height: 700px;
+}
+
+/* Services Section */
+.services .row > * {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Row Styling */
+.row.my-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Offer Section */
+.offer_style {
+   background-color: #0dcaf0;
+}
+
+/* Juhu Image */
+.Juhuimg {
+    height: 20rem;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #808080;
+    text-align: center;
+    margin-bottom: -3rem;
+}
+
+.footer2 {
+    background-color: #808080;
+    text-align: center;
+    margin-top: 13rem;
+}
+
+/* Card Image Wrapper */
+.card-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.medium-img {
+    max-height: 500px; /* Adjusted height for medium size */
+    width: auto;
+    object-fit: cover;
+}
+
+/* Responsive CSS Code */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .carousel-item img {
+        height: 85vh;
+    }
+    .About_Us {
+        max-height: 600px;
+    }
+    .Juhuimg {
+        height: 15rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .row.my-5 {
+        justify-content: space-around;
+    }
+    .offer_style {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .footer {
+        margin-bottom: -2rem;
+    }
+    .card-img-wrapper {
+        flex-direction: column;
+    }
+    .About_Us {
+        max-height: 650px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-item img {
+        height: 90vh;
+    }
+    .offer_style {
+        padding: 2rem 4rem;
+    }
+    .Juhuimg {
+        height: 18rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .About_Us {
+        min-width: 80%;
+    }
+    .footer2 {
+        margin-top: 10rem;
+    }
+    .row.my-5 {
+        justify-content: space-between;
+    }
+}
